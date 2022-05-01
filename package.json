@@ -11,14 +11,11 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "autoprefixer": "^9.8.8",
     "firebase": "^9.6.11",
     "formik": "^2.2.9",
     "next": "12.1.5",
-    "postcss": "^7.0.39",
     "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.17"
+    "react-dom": "18.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
@@ -29,9 +26,12 @@
     "@storybook/addon-postcss": "^2.0.0",
     "@storybook/react": "^6.4.22",
     "@storybook/testing-library": "^0.0.11",
+    "autoprefixer": "^10.4.5",
     "babel-loader": "^8.2.5",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",
-    "storybook": "^6.4.22"
+    "postcss": "^8.4.13",
+    "storybook": "^6.4.22",
+    "tailwindcss": "^3.0.24"
   }
 }
