@@ -25,11 +25,7 @@ export const Container = () => {
         <div className='logo-title ml-2.5'>Meetmax</div>
       </div>
       <div className='language-selection absolute logo font-bold right-0 w-100 text-sm text-[#4E5D78]'>
-        <select
-          className='max-w-[154px] h-[38px]'
-          id='languages'
-          name='languages'
-        >
+        <select className='max-w-[154px] h-[38px]' name='languages'>
           {Object.keys(langCodes).map((key) => {
             return (
               <option
