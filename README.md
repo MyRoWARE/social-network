@@ -20,6 +20,8 @@ https://www.notion.so/Batch-4-Team-3-SecondBrain-62badac29cc049bfb3ef5ab75ae720a
 
 You will need storybook for the develpment
 
+https://storybook.js.org/docs/react/get-started/install
+
 First, run the development server:
 
 ```bash
