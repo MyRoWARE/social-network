@@ -1,9 +1,9 @@
 import React from 'react'
 import { langCodes } from '../../constants/constants'
 
-export const Container = () => {
+export const Container = ({ children }) => {
   return (
-    <div className='relative h-full w-full flex bg-gradient-to-r from-[#ffffff66] to-[#ffffff1a]'>
+    <div className='relative h-full w-full flex flex-col bg-gradient-to-r from-[#ffffff66] to-[#ffffff1a]'>
       <div className='absolute logo text-[#4E5D78] font-bold left-0 text-2xl flex'>
         <svg
           width='26'
@@ -41,6 +41,8 @@ export const Container = () => {
           <option>Select Language</option>
         </select>
       </div>
+
+      {children}
     </div>
   )
 }
