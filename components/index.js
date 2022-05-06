@@ -5,5 +5,5 @@ export { Form } from "./Form";
 export { AnchorButton } from "./AnchorButton";
 export { PasswordInput } from "./PasswordInput";
 export { Card } from "./Card";
-export { Butotn } from "./Button";
+export { Button } from "./Button";
 export { DatePicker } from "./DatePicker";
