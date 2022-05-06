@@ -1,7 +1,6 @@
-import { TextInput } from '../components/NameInput'
+import { TextInput } from "../components/NameInput";
 // import { PasswordInput } from '../components'
 
-<<<<<<< HEAD
 const Template = (args) => <TextInput {...args} />;
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -10,70 +9,36 @@ export default {
   component: TextInput,
   argTypes: { inputChange: { action: "input change" } },
 };
-=======
-const Template = (args) => <TextInput {...args} />
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
-  title: 'TextInput',
-  component: TextInput,
-  argTypes: { inputChange: { action: 'input change' } }
-}
->>>>>>> main
-
-export const Name = Template.bind({})
+export const Name = Template.bind({});
 Name.args = {
-<<<<<<< HEAD
   type: "name",
   error: false,
 };
-=======
-  type: 'name',
-  error: false
-}
->>>>>>> main
 
-export const NameWithError = Template.bind({})
+export const NameWithError = Template.bind({});
 NameWithError.args = {
-<<<<<<< HEAD
   type: "name",
   error: true,
 };
-=======
-  type: 'name',
-  error: true
-}
->>>>>>> main
 
-export const Email = Template.bind({})
+export const Email = Template.bind({});
 Email.args = {
-<<<<<<< HEAD
   type: "email",
   error: false,
 };
-=======
-  type: 'email',
-  error: false
-}
->>>>>>> main
 
-export const EmailWithError = Template.bind({})
+export const EmailWithError = Template.bind({});
 EmailWithError.args = {
-<<<<<<< HEAD
   type: "email",
   error: true,
 };
-=======
-  type: 'email',
-  error: true
-}
 
 // export const PasswordInputStory = {
 //   title: 'PasswordInput',
 //   component: PasswordInput,
 //   argTypes: { inputChange: { action: 'input-change' } }
 // }
->>>>>>> main
 
 // This logic will go to the parent component i.e. the signup/login form
 // const [nameError, setNameError] = useState(false);
