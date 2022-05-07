@@ -1,19 +1,17 @@
 import React from "react";
-import { Title, Container, Card, Form } from "../components";
+import { Title, Container, Card, TextInput } from "../components";
 
-export default function ForgetPass({ email }) {
-  const subheading = () => {
-    return (
-      <Container>
-        <Card>
-          <Title
-            heading="Forgot password?"
-            subheading="Enter your details to receive a rest link "
-          ></Title>
+export default function ForgetPass() {
+  return (
+    <Container>
+      <Card>
+        <Title
+          heading="Forgot password?"
+          subheading="Enter your details to receive a rest link "
+        ></Title>
 
-          <Form />
-        </Card>
-      </Container>
-    );
-  };
+        <TextInput type="email" />
+      </Card>
+    </Container>
+  );
 }
