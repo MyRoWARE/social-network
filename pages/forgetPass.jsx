@@ -1,5 +1,12 @@
 import React from "react";
-import { Title, Container, Card, TextInput } from "../components";
+import {
+  Title,
+  Container,
+  Card,
+  TextInput,
+  Button,
+  AnchorButton,
+} from "../components";
 
 export default function ForgetPass() {
   return (
@@ -11,6 +18,11 @@ export default function ForgetPass() {
         ></Title>
 
         <TextInput type="email" />
+        <Button>Send</Button>
+        <AnchorButton
+          anchorTitle="< Back to Sign In"
+          link="signin"
+        ></AnchorButton>
       </Card>
     </Container>
   );
