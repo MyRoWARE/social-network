@@ -19,10 +19,7 @@ export default function ForgetPass() {
 
         <TextInput type="email" />
         <Button>Send</Button>
-        <AnchorButton
-          anchorTitle="< Back to Sign In"
-          link="signin"
-        ></AnchorButton>
+        <AnchorButton anchorTitle="< Back to Sign In" link="signin" />
       </Card>
     </Container>
   );
