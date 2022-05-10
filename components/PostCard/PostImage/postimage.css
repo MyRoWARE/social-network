@@ -1,0 +1,6 @@
+/* // targeting the first div */
+.img-wrapper > span {
+	/* // this will take full-height, u can adjust it */
+	height: 100%;
+	display: none;
+}
