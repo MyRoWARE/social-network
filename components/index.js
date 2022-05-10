@@ -7,3 +7,5 @@ export { PasswordInput } from "./PasswordInput";
 export { Card } from "./Card";
 export { Button } from "./Button";
 export { DatePicker } from "./DatePicker";
+export { PostCard } from "./PostCard";
+export { MyImage } from "./MyImage";
