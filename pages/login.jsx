@@ -1,9 +1,17 @@
 import React from 'react'
+import { Title, Container, Form } from '../components'
 
-const login = () => {
+const Login = () => {
   return (
-    <div>login</div>
+    <Container>
+      <Title
+        heading='Sign In'
+        subheading="Welcome back, you've been missed!"
+      ></Title>
+
+      <Form login />
+    </Container>
   )
 }
 
-export default login
+export default Login

@@ -9,7 +9,7 @@ const Signup = () => {
         subheading='Create an account to continue and connect with the people.'
       />
 
-      <Form />
+      <Form signup={true} />
     </Container>
   )
 }
