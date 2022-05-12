@@ -59,5 +59,5 @@ export const Sidebar = () => {
 			})}
 		</ul>
 	);
-	return <div className="">{navsList}</div>;
+	return <aside className="">{navsList}</aside>;
 };
