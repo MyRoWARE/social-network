@@ -32,6 +32,7 @@
     "eslint-config-next": "12.1.5",
     "postcss": "^8.4.13",
     "storybook": "^6.4.22",
+    "storybook-addon-next-router": "^3.1.1",
     "tailwindcss": "^3.0.24"
   }
 }
