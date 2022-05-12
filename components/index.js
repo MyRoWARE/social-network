@@ -9,3 +9,4 @@ export { Button } from "./Button";
 export { DatePicker } from "./DatePicker";
 export { PostCard } from "./PostCard";
 export { MyImage } from "./MyImage";
+export { Sidebar } from "./Sidebar";
