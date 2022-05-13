@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Card = ({ children }) => {
+export const Card = ({ children, height }) => {
   return (
     <div
       className='bg-white mt-24 rounded-lg p-5 

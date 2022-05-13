@@ -2,6 +2,7 @@ import React from 'react'
 import { TextInput } from '../NameInput'
 import { GoogleExternalSignup, AppleExternalSignup } from './ExternalSignup'
 import { Button } from '../Button'
+import { PasswordInput } from '../PasswordInput'
 
 export const Form = ({ login, signup }) => {
   return (
@@ -18,22 +19,30 @@ export const Form = ({ login, signup }) => {
       </div>
 
       <TextInput type='name' />
-      <TextInput type='email' />
+      {signup && <TextInput type='email' />}
 
-      {/* <button
-        className='bg-blue-500 hover:bg-blue-700 text-white w-full font-bold py-2 px-4 rounded-lg focus:outline-none focus:shadow-outline'
-        type='button'
-      >
-        Sign Up
-      </button> */}
-      <Button>Sign Up</Button>
+      {signup && <Button>Sign Up</Button>}
 
-      <small className='mx-auto'>
-        Already have an account?{' '}
-        <a className='text-blue-500 hover:text-blue-700' href='#'>
-          Sign In
-        </a>
-      </small>
+      {signup && (
+        <small className='mx-auto'>
+          {`Already have an account?`}
+          <a className='text-blue-500 hover:text-blue-700' href='#'>
+            Sign In
+          </a>
+        </small>
+      )}
+
+      {login && <PasswordInput />}
+      {login && <Button>Login</Button>}
+
+      {login && (
+        <small className='mx-auto'>
+          {`Don't have an account?  `}
+          <a className='text-blue-500 hover:text-blue-700' href='#'>
+            Sign Up
+          </a>
+        </small>
+      )}
     </form>
   )
 }

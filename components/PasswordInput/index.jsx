@@ -6,7 +6,7 @@ export const PasswordInput = ({ inputChange, error }) => {
       <div className='flex gap-2 p-2 rounded-xl border-2 border-gray-400 h-12'>
         <div className='password-icon'>
           <svg
-            width='16'
+            width='26'
             height='26'
             viewBox='0 0 14 16'
             fill='none'
@@ -40,7 +40,7 @@ export const PasswordInput = ({ inputChange, error }) => {
         </div>
 
         <input
-          className='outline-none'
+          className='outline-none pl-2'
           type='password'
           placeholder='Your password'
           required
