@@ -12,4 +12,3 @@ export { MyImage } from './MyImage'
 export { Sidebar } from './Sidebar'
 export { CreatePost } from './CreatePost'
 export { PostInput } from './PostInput'
-
