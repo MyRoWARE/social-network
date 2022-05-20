@@ -1,7 +1,5 @@
 import React from "react";
-import { MyImage, myLoader } from "../../MyImage";
-import "./postimage.css";
-import Image from "next/image";
+import { MyImage } from "../../MyImage";
 
 export const PostImage = ({ src }) => {
 	return (
