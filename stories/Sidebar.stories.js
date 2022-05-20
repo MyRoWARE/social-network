@@ -1,106 +1,107 @@
-import { Sidebar } from "../components";
-const Template = args => <Sidebar {...args} />;
+import { Sidebar } from '../components';
+
+const Template = (args) => <Sidebar {...args} />;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-	title: "Sidebar",
-	component: Sidebar,
+  title: 'Sidebar',
+  component: Sidebar,
 };
 
-export const activeFeedSidebar = Template.bind({});
+export const ActiveFeedSidebar = Template.bind({});
 
-activeFeedSidebar.story = {
-	parameters: {
-		nextRouter: {
-			path: "/",
-			asPath: "/",
-			// query: {
-			//   id: "lifeiscontent",
-			// },
-		},
-	},
+ActiveFeedSidebar.story = {
+  parameters: {
+    nextRouter: {
+      path: '/',
+      asPath: '/',
+      // query: {
+      //   id: "lifeiscontent",
+      // },
+    },
+  },
 };
 
-export const activeCommunitySidebar = Template.bind({});
+export const ActiveCommunitySidebar = Template.bind({});
 
-activeCommunitySidebar.story = {
-	parameters: {
-		nextRouter: {
-			path: "/community",
-			asPath: "/community",
-			// query: {
-			//   id: "lifeiscontent",
-			// },
-		},
-	},
+ActiveCommunitySidebar.story = {
+  parameters: {
+    nextRouter: {
+      path: '/community',
+      asPath: '/community',
+      // query: {
+      //   id: "lifeiscontent",
+      // },
+    },
+  },
 };
 
-export const activeMessagesSidebar = Template.bind({});
+export const ActiveMessagesSidebar = Template.bind({});
 
-activeMessagesSidebar.story = {
-	parameters: {
-		nextRouter: {
-			path: "/messages",
-			asPath: "/messages",
-			// query: {
-			//   id: "lifeiscontent",
-			// },
-		},
-	},
+ActiveMessagesSidebar.story = {
+  parameters: {
+    nextRouter: {
+      path: '/messages',
+      asPath: '/messages',
+      // query: {
+      //   id: "lifeiscontent",
+      // },
+    },
+  },
 };
 
-export const activenotificationSidebar = Template.bind({});
+export const ActivenotificationSidebar = Template.bind({});
 
-activenotificationSidebar.story = {
-	parameters: {
-		nextRouter: {
-			path: "/notification",
-			asPath: "/notification",
-			// query: {
-			//   id: "lifeiscontent",
-			// },
-		},
-	},
+ActivenotificationSidebar.story = {
+  parameters: {
+    nextRouter: {
+      path: '/notification',
+      asPath: '/notification',
+      // query: {
+      //   id: "lifeiscontent",
+      // },
+    },
+  },
 };
 
-export const activeExploreSidebar = Template.bind({});
+export const ActiveExploreSidebar = Template.bind({});
 
-activeExploreSidebar.story = {
-	parameters: {
-		nextRouter: {
-			path: "/explore",
-			asPath: "/explore",
-			// query: {
-			//   id: "lifeiscontent",
-			// },
-		},
-	},
+ActiveExploreSidebar.story = {
+  parameters: {
+    nextRouter: {
+      path: '/explore',
+      asPath: '/explore',
+      // query: {
+      //   id: "lifeiscontent",
+      // },
+    },
+  },
 };
 
-export const activeProfioleSidebar = Template.bind({});
+export const ActiveProfioleSidebar = Template.bind({});
 
-activeProfioleSidebar.story = {
-	parameters: {
-		nextRouter: {
-			path: "/profile",
-			asPath: "/profile",
-			// query: {
-			//   id: "lifeiscontent",
-			// },
-		},
-	},
+ActiveProfioleSidebar.story = {
+  parameters: {
+    nextRouter: {
+      path: '/profile',
+      asPath: '/profile',
+      // query: {
+      //   id: "lifeiscontent",
+      // },
+    },
+  },
 };
 
-export const activeSettingSidebar = Template.bind({});
+export const ActiveSettingSidebar = Template.bind({});
 
-activeSettingSidebar.story = {
-	parameters: {
-		nextRouter: {
-			path: "/settings",
-			asPath: "/settings",
-			// query: {
-			//   id: "lifeiscontent",
-			// },
-		},
-	},
+ActiveSettingSidebar.story = {
+  parameters: {
+    nextRouter: {
+      path: '/settings',
+      asPath: '/settings',
+      // query: {
+      //   id: "lifeiscontent",
+      // },
+    },
+  },
 };
