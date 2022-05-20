@@ -1,4 +1,5 @@
 import { PostInput } from '../components'
+
 const Template = (args) => <PostInput {...args} />
 
 // eslint-disable-next-line import/no-anonymous-default-export
