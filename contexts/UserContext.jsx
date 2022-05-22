@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react';
 const Context = createContext();
 
 const Provider = ({ children }) => {
-  const [user, setUser] = useState({ name: 'jeff', user: 'test' });
+  const [user, setUser] = useState({ name: 'jeff', isAuthenticated: true });
 
   // eslint-disable-next-line react/jsx-no-constructed-context-values
   const exposed = {
