@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
-import "./style.css";
+import { useEffect, useState } from 'react';
+import './style.css';
 
-export const GenderInput = ({ inputChange, error }) => {
-  const [gender, setGender] = useState("");
+export const GenderInput = ({ error }) => {
+  const [gender, setGender] = useState();
+
+  useEffect(() => {
+    setGender('male');
+  }, []);
 
   return (
     <div className="w-2/4">
       <div className="flex gap-2 p-2 rounded-xl border-2 border-gray-400 h-12">
-        {gender === "female" ? (
+        {gender === 'female' ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-venus"
@@ -23,7 +27,7 @@ export const GenderInput = ({ inputChange, error }) => {
             <line x1="12" y1="14" x2="12" y2="21" />
             <line x1="9" y1="18" x2="15" y2="18" />
           </svg>
-        ) : gender === "male" ? (
+        ) : gender === 'male' ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="icon icon-tabler icon-tabler-mars"
@@ -64,11 +68,10 @@ export const GenderInput = ({ inputChange, error }) => {
             name="gender"
             id="male"
             value="male"
+            defaultChecked
             onChange={(e) => setGender(e.target.value)}
           />
-          <label className="form-check-label inline-block" htmlFor="optioMale">
-            Male
-          </label>
+          Male
         </div>
         <div className="form-check form-check-inline">
           <input
@@ -79,19 +82,14 @@ export const GenderInput = ({ inputChange, error }) => {
             value="female"
             onChange={(e) => setGender(e.target.value)}
           />
-          <label
-            className="form-check-label inline-block"
-            htmlFor="optionFemale"
-          >
-            Female
-          </label>
+          Female
         </div>
       </div>
 
       <p
         style={{
-          color: "#FF5630",
-          display: error ? "block" : "none",
+          color: '#FF5630',
+          display: error ? 'block' : 'none',
         }}
       >
         Please enter a valid Name
