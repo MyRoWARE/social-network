@@ -6,8 +6,8 @@ import { SearchFilter } from "./SearchFilter";
 export const NavBar = ({ children }) => {
   return (
     <div
-      className="bg-white mt-24  p-5 
-    mx-4 md:mx-auto flex 
+      className="bg-white mt-24  p-4 
+     md:mx-auto flex 
     flex-row justify-around  
     drop-shadow-xl
     h-auto text-gray-600 sticky top-0 "

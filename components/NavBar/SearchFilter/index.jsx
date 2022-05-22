@@ -10,11 +10,11 @@ export const SearchFilter = () => {
   };
 
   return (
-    <div className="">
-      <div className="w-full relative flex flex-row">
+    <div className="w-full">
+      <div className="w-full px-4 relative flex flex-row">
         <button
           type="submit"
-          className="w-full h-15 border-2 border-solid border-slate-500 text-center rounded-md flex flex-row"
+          className="w-full  h-15 border-2 border-solid border-slate-500 text-center rounded-md flex flex-row"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
