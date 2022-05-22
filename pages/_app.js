@@ -1,7 +1,10 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
+import UserProvider from '../contexts/UserContext';
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => (
+  <UserProvider>
+    <Component {...pageProps} />;
+  </UserProvider>
+);
 
-export default MyApp
+export default MyApp;
