@@ -1,4 +1,8 @@
-input[type="radio"]:checked + label span {
+input[type='radio']:checked {
   background-color: #3490dc;
   box-shadow: 0px 0px 0px 2px white inset;
+}
+
+.form-check {
+  padding-top: 0.2rem;
 }
