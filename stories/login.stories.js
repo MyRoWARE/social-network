@@ -1,9 +1,9 @@
 /* eslint-disable import/no-anonymous-default-export */
-import Login from '../pages/login'
+import Login from '../pages/login';
 
 export default {
   title: 'Pages/Login',
-  component: Login
-}
+  component: Login,
+};
 
-export const LoginPage = () => <Login />
+export const LoginPage = () => <Login />;
