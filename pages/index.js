@@ -4,11 +4,18 @@ import { useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import { DatePicker } from '../components';
 import { FileUploaderTester } from '../components/FileUploaderTester';
+import { useUser } from '../contexts/UserContext';
+import { useRouter } from 'next/router';
 
 const Home = () => {
-  useEffect(() => {
-    // getPosts();
-  }, []);
+  const { user, setUser } = useUser();
+  const router = useRouter();
+
+  useEffect(() => {}, []);
+
+  if (!user.isAuthenticated) {
+    router.push('/login');
+  }
 
   return (
     <div className={styles.container}>
