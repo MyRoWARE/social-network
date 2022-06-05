@@ -37,7 +37,7 @@ export const PasswordInput = ({ inputChange, error }) => (
       </div>
 
       <input
-        className="outline-none pl-2"
+        className="outline-none pl-2 w-full bg-none"
         type="password"
         placeholder="Your password"
         required

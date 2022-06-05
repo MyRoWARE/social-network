@@ -20,7 +20,7 @@ export const TextInput = ({ type, inputChange, error }) => {
             <path d="M9.5 15a3.5 3.5 0 0 0 5 0" />
           </svg>
           <input
-            className="outline-none pl-2"
+            className="outline-none pl-2 w-full"
             type="text"
             placeholder="Your Name"
             required
@@ -56,7 +56,7 @@ export const TextInput = ({ type, inputChange, error }) => {
           <path d="M16 12v1.5a2.5 2.5 0 0 0 5 0v-1.5a9 9 0 1 0 -5.5 8.28" />
         </svg>
         <input
-          className="outline-none pl-2"
+          className="outline-none pl-2 w-full"
           type="email"
           placeholder="Your Email"
           required

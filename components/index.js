@@ -1,9 +1,9 @@
-export { TextInput } from './NameInput';
+export { TextInput } from './Form/NameInput';
 export { Title } from './Title';
 export { Container } from './Container';
 export { Form } from './Form';
 export { AnchorButton } from './AnchorButton';
-export { PasswordInput } from './PasswordInput';
+export { PasswordInput } from './Form/PasswordInput';
 export { Card } from './Card';
 export { Button } from './Button';
 export { DatePicker } from './DatePicker';
