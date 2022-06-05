@@ -24,7 +24,7 @@ export const Form = ({ login, signup }) => (
 
     {signup && (
       <small className="mx-auto">
-        {`Already have an account?`}
+        Already have an account?
         <a className="text-blue-500 hover:text-blue-700" onClick={() => router.push('/login')}>
           Sign In
         </a>
@@ -45,13 +45,3 @@ export const Form = ({ login, signup }) => (
     )}
   </form>
 );
-{
-  login && (
-    <small className="mx-auto">
-      {`Don't have an account?  `}
-      <a className="text-blue-500 hover:text-blue-700" onClick={() => router.push('/signup')}>
-        Sign Up
-      </a>
-    </small>
-  );
-}
