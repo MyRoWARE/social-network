@@ -22,14 +22,14 @@ export const Form = ({ login, signup }) => (
 
     {signup && <Button>Sign Up</Button>}
 
-      {signup && (
-        <small className="mx-auto">
-          {`Already have an account?`}
-          <a className="text-blue-500 hover:text-blue-700" onClick={() => router.push('/login')}>
-            Sign In
-          </a>
-        </small>
-      )}
+    {signup && (
+      <small className="mx-auto">
+        {`Already have an account?`}
+        <a className="text-blue-500 hover:text-blue-700" onClick={() => router.push('/login')}>
+          Sign In
+        </a>
+      </small>
+    )}
 
     {login && <TextInput type="email" />}
     {login && <PasswordInput />}
@@ -45,14 +45,13 @@ export const Form = ({ login, signup }) => (
     )}
   </form>
 );
-      {login && (
-        <small className="mx-auto">
-          {`Don't have an account?  `}
-          <a className="text-blue-500 hover:text-blue-700" onClick={() => router.push('/signup')}>
-            Sign Up
-          </a>
-        </small>
-      )}
-    </form>
+{
+  login && (
+    <small className="mx-auto">
+      {`Don't have an account?  `}
+      <a className="text-blue-500 hover:text-blue-700" onClick={() => router.push('/signup')}>
+        Sign Up
+      </a>
+    </small>
   );
-};
+}
