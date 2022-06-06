@@ -1,9 +1,12 @@
 import '../styles/globals.css';
 import UserProvider from '../contexts/UserContext';
+import { Container } from '../components';
 
 const MyApp = ({ Component, pageProps }) => (
   <UserProvider>
-    <Component {...pageProps} />;
+    <Container>
+      <Component {...pageProps} />;
+    </Container>
   </UserProvider>
 );
 
