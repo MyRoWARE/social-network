@@ -1,36 +1,36 @@
-import { TextInput } from "../components/NameInput";
+import { TextInput } from '../components/Form/NameInput';
 // import { PasswordInput } from '../components'
 
 const Template = (args) => <TextInput {...args} />;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: "TextInput",
+  title: 'TextInput',
   component: TextInput,
-  argTypes: { inputChange: { action: "input change" } },
+  argTypes: { inputChange: { action: 'input change' } },
 };
 
 export const Name = Template.bind({});
 Name.args = {
-  type: "name",
+  type: 'name',
   error: false,
 };
 
 export const NameWithError = Template.bind({});
 NameWithError.args = {
-  type: "name",
+  type: 'name',
   error: true,
 };
 
 export const Email = Template.bind({});
 Email.args = {
-  type: "email",
+  type: 'email',
   error: false,
 };
 
 export const EmailWithError = Template.bind({});
 EmailWithError.args = {
-  type: "email",
+  type: 'email',
   error: true,
 };
 
