@@ -4,6 +4,7 @@ import { TextInput } from './NameInput';
 import { GoogleExternalSignup, AppleExternalSignup } from './ExternalSignup';
 import { Button } from '../Button';
 import { PasswordInput } from './PasswordInput';
+import { DatePicker } from '../DatePicker';
 
 export const Form = ({ login, signup }) => {
   const router = useRouter();
@@ -23,7 +24,8 @@ export const Form = ({ login, signup }) => {
 
       {signup && <TextInput type="name" />}
       {signup && <TextInput type="email" />}
-
+      {signup && <PasswordInput />}
+      {signup && <DatePicker />}
       {signup && <Button>Sign Up</Button>}
 
       {signup && (
