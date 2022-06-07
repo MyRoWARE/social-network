@@ -2,7 +2,7 @@ import { langCodes } from '../../constants/constants';
 
 export const Container = ({ children }) => (
   <div className="relative h-full w-full flex flex-col bg-gradient-to-r from-[#ffffff66] to-[#ffffff1a]">
-    <div className="header relative flex flex-row justify-between h-[78px]">
+    <div className="header relative flex flex-row justify-between h-[78px] m-4">
       <div className="logo text-[#4E5D78] font-bold text-2xl flex">
         <svg
           width="26"
