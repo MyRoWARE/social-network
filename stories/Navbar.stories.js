@@ -1,9 +1,10 @@
-import { NavBar } from "../components/NavBar";
+import { NavBar } from '../components/NavBar';
+
 const Template = (args) => <NavBar {...args} />;
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  title: "NavBar",
+  title: 'NavBar',
   component: NavBar,
 };
 
