@@ -3,6 +3,7 @@ import { MyImage } from '../MyImage';
 import { Notifications } from './Notifications';
 import { SearchFilter } from './SearchFilter';
 
+const username = 'Saleh Ahmed';
 const imageSRC =
   'photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHByb2ZpbGV8ZW58MHx8MHx8';
 export const NavBar = ({ children }) => (
@@ -15,15 +16,14 @@ export const NavBar = ({ children }) => (
       flex 
       items-center
       lg:flex-row-reverse
-      justify-around  
-      drop-shadow-xl"
+      justify-around"
     >
       <div className="flex lg:flex-row-reverse ">
         <div className="rounded-lg overflow-hidden h-12 w-12 relative cursor-pointer">
           <MyImage src={imageSRC} width={60} height={60} alt="Profile picture" />
         </div>
         <div className="hidden  lg:block lg:flex items-center lg:whitespace-nowrap lg:px-4  ">
-          <h3 className="text-gray-600 lg:align-middle">John Cenna</h3>
+          <h3 className="text-gray-600 lg:align-middle">{username}</h3>
         </div>
       </div>
       <SearchFilter />
