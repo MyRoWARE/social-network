@@ -16,16 +16,16 @@
     "next": "12.1.5",
     "react": "18.0.0",
     "react-dom": "18.0.0",
-    "storybook": "^6.5.3"
+    "storybook": "^6.5.7"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",
-    "@storybook/addon-actions": "^6.5.3",
-    "@storybook/addon-essentials": "^6.5.3",
-    "@storybook/addon-interactions": "^6.5.3",
-    "@storybook/addon-links": "^6.5.3",
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-interactions": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
     "@storybook/addon-postcss": "^2.0.0",
-    "@storybook/react": "^6.5.3",
+    "@storybook/react": "^6.5.7",
     "@storybook/testing-library": "^0.0.11",
     "autoprefixer": "^10.4.5",
     "babel-loader": "^8.2.5",
@@ -42,7 +42,7 @@
     "html-webpack-plugin": "^5.5.0",
     "postcss": "^8.4.13",
     "prettier": "^2.6.2",
-    "storybook-addon-next-router": "^3.1.1",
+    "storybook-addon-next-router": "^4.0.0",
     "storybook-react-context": "^0.6.0",
     "tailwindcss": "^3.0.24"
   }

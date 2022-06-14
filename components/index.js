@@ -13,3 +13,4 @@ export { Sidebar } from './Sidebar';
 export { CreatePost } from './CreatePost';
 export { PostInput } from './PostInput';
 export { Backdrop } from './Backdrop';
+export { NavBar } from './NavBar';
