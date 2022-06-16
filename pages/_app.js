@@ -4,7 +4,7 @@ import { Container } from '../components';
 
 const MyApp = ({ Component, pageProps }) => (
   <UserProvider>
-    <Container>
+    <Container isLoggedIn>
       <Component {...pageProps} />;
     </Container>
   </UserProvider>

@@ -7,7 +7,7 @@ const Feed = () => {
   return (
     <div className="feed-content w-full flex flex-row">
       <Sidebar />
-      <div className="post-content-container flex flex-col w-full p-0 m-0  ">
+      <div className="post-content-container flex flex-col items-center w-full p-0 m-0  ">
         <CreatePost />
         <PostCard />
       </div>
