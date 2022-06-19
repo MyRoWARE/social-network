@@ -10,7 +10,7 @@ export const Form = ({ login, signup }) => {
   const router = useRouter();
 
   return (
-    <form className="bg-white rounded-lg p-5 md:min-w-[500px] max-w-2xl  mx-4 md:mx-auto flex flex-col justify-between gap-5 drop-shadow-xl">
+    <form className="bg-white rounded-lg p-5 min-w-[400px] w-full max-w-xl mx-4 md:mx-auto flex flex-col justify-between gap-5 drop-shadow-xl">
       <div className="signup-with flex justify-between">
         <GoogleExternalSignup login={login} />
         <AppleExternalSignup login={login} />
