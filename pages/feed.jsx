@@ -1,19 +1,17 @@
 import { useEffect } from 'react';
-import { Container, CreatePost, PostCard, Sidebar } from '../components';
+import { CreatePost, PostCard, Sidebar } from '../components';
 
 const Feed = () => {
   useEffect(() => {}, []);
 
   return (
-    <Container>
-      <div className="feed-content w-full flex flex-row">
-        <Sidebar />
-        <div className="post-content-container flex flex-col w-full p-0 m-0  ">
-          <CreatePost />
-          <PostCard />
-        </div>
+    <div className="feed-content w-full flex flex-row">
+      <Sidebar />
+      <div className="post-content-container flex flex-col items-center w-full p-0 m-0  ">
+        <CreatePost />
+        <PostCard />
       </div>
-    </Container>
+    </div>
   );
 };
 

@@ -1,6 +1,6 @@
-import { langCodes } from '../../constants/constants';
+// import { langCodes } from '../../constants/constants';
 
-export const Container = ({ children }) => (
+export const Container = ({ children, isLoggedIn }) => (
   <div className="relative h-full w-full flex flex-col bg-gradient-to-r from-[#ffffff66] to-[#ffffff1a]">
     <div className="header relative flex flex-row justify-between h-[78px] m-4">
       <div className="logo text-[#4E5D78] font-bold text-2xl flex">
@@ -23,7 +23,7 @@ export const Container = ({ children }) => (
 
         <div className="logo-title ml-2.5">Meetmax</div>
       </div>
-      <div className="language-selection relative logo font-bold right-0 w-100 text-sm text-[#4E5D78]">
+      {/* <div className="language-selection relative logo font-bold right-0 w-100 text-sm text-[#4E5D78]">
         <select className="max-w-[154px] h-[38px]" name="languages">
           {Object.keys(langCodes).map((key) => (
             <option key={key} className="language-option text-[#4E5D78] " selected={key === 'en'}>
@@ -33,7 +33,9 @@ export const Container = ({ children }) => (
 
           <option>Select Language</option>
         </select>
-      </div>
+      </div> */}
+
+      {isLoggedIn && <div>UserName</div>}
     </div>
 
     {children}
