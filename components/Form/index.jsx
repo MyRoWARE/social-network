@@ -24,8 +24,28 @@ export const Form = ({ login, signup }) => {
 
       {signup && <TextInput type="name" />}
       {signup && <TextInput type="email" />}
-      {signup && <PasswordInput />}
-      {signup && <DatePicker />}
+      {signup && <PasswordInput placeholder="Your password here" />}
+      {signup && <PasswordInput placeholder="Password confirmation" />}
+      {signup && (
+        <div className="bottom-form-section flex flex-row justify-between">
+          <DatePicker />
+          <div className="gender flex gap-2 p-2 rounded-xl border-2 border-gray-400 w-full max-w-[240px]">
+            <label htmlFor="gender" key="male" className="p-1">
+              <input type="radio" />
+              <span className="ml-1">Male </span>
+            </label>
+            <label htmlFor="gender" key="female" className="p-1">
+              <input type="radio" />
+              <span className="ml-1">Female </span>
+            </label>
+            <label htmlFor="gender" key="other" className="p-1">
+              <input type="radio" />
+              <span className="ml-1">Other </span>
+            </label>
+          </div>
+        </div>
+      )}
+
       {signup && <Button>Sign Up</Button>}
 
       {signup && (
@@ -33,7 +53,7 @@ export const Form = ({ login, signup }) => {
           Already have an account?
           <a
             role="link"
-            className="text-blue-500 hover:text-blue-700"
+            className="text-blue-500 hover:text-blue-700 ml-2"
             tabIndex={0}
             onClick={() => router.push('/login')}
             onKeyPress={() => router.push('/login')}

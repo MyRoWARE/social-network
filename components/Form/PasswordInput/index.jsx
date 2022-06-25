@@ -1,4 +1,4 @@
-export const PasswordInput = ({ inputChange, error }) => (
+export const PasswordInput = ({ inputChange, error, placeholder }) => (
   <div className="w-full">
     <div className="flex gap-2 p-2 rounded-xl border-2 border-gray-400 h-12">
       <div className="password-icon">
@@ -39,7 +39,7 @@ export const PasswordInput = ({ inputChange, error }) => (
       <input
         className="outline-none pl-2 w-full bg-none"
         type="password"
-        placeholder="Your password"
+        placeholder={placeholder}
         required
         onChange={inputChange}
       />

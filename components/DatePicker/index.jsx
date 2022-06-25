@@ -1,6 +1,6 @@
 export const DatePicker = () => (
-  <div className="w-full">
-    <div className="flex gap-2 p-2 rounded-xl border-2 border-gray-400">
+  <div className="w-full max-w-[240px] ">
+    <div className="flex gap-2 p-2 rounded-xl border-2 border-gray-400 h-12">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="h-6 w-6"
