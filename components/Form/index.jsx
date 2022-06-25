@@ -1,4 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import { useState } from 'react';
+import { data } from 'autoprefixer';
 import { useRouter } from 'next/router';
 import { TextInput } from './NameInput';
 import { GoogleExternalSignup, AppleExternalSignup } from './ExternalSignup';
@@ -8,6 +10,19 @@ import { DatePicker } from '../DatePicker';
 
 export const Form = ({ login, signup }) => {
   const router = useRouter();
+  const [signupEmail, setSignupEmail] = useState('');
+  const [loginEmail, setLoginEmail] = useState('');
+
+  // handlers
+  const handleSignup = (e) => {
+    e.preventDefault();
+    console.log(data);
+  };
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    console.log(data);
+  };
 
   return (
     <form className="bg-white rounded-lg p-5 min-w-[400px] w-full max-w-xl mx-4 md:mx-auto flex flex-col justify-between gap-5 drop-shadow-xl">
@@ -23,7 +38,7 @@ export const Form = ({ login, signup }) => {
       </div>
 
       {signup && <TextInput type="name" />}
-      {signup && <TextInput type="email" />}
+      {signup && <TextInput type="email" value={data.email} />}
       {signup && <PasswordInput placeholder="Your password here" />}
       {signup && <PasswordInput placeholder="Password confirmation" />}
       {signup && (
@@ -46,7 +61,7 @@ export const Form = ({ login, signup }) => {
         </div>
       )}
 
-      {signup && <Button>Sign Up</Button>}
+      {signup && <Button onClick={handleSignup}>Sign Up</Button>}
 
       {signup && (
         <small className="mx-auto">
@@ -63,9 +78,9 @@ export const Form = ({ login, signup }) => {
         </small>
       )}
 
-      {login && <TextInput type="email" />}
+      {login && <TextInput type="email" value={data.email} />}
       {login && <PasswordInput />}
-      {login && <Button>Login</Button>}
+      {login && <Button onClick={handleLogin}>Login</Button>}
 
       {login && (
         <small className="mx-auto">
