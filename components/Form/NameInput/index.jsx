@@ -1,4 +1,8 @@
-export const TextInput = ({ type, inputChange, error }) => {
+export const TextInput = ({ type, inputChange, error, value }) => {
+  const handleChange = (e) => {
+    inputChange(e.target.value);
+  };
+
   if (type === 'name') {
     return (
       <div className="w-full">
@@ -60,7 +64,8 @@ export const TextInput = ({ type, inputChange, error }) => {
           type="email"
           placeholder="Your Email"
           required
-          onChange={inputChange}
+          onChange={handleChange}
+          value={value}
         />
       </div>
       <p
