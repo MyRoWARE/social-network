@@ -1,12 +1,18 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useRouter } from 'next/router';
+import { useState } from 'react';
 import { TextInput } from '../NameInput';
 import { GoogleExternalSignup, AppleExternalSignup } from '../ExternalSignup';
 import { Button } from '../../Button';
 import { PasswordInput } from '../PasswordInput';
 
 export const LoginForm = ({ login }) => {
+  const [email, setEmail] = useState('test@gmail.com');
+  const [password, setPassword] = useState('cheese');
+
   const router = useRouter();
+
+  // const firebaseLogin = async () => {};
 
   return (
     <form className="bg-white rounded-lg p-5 min-w-[400px] w-full max-w-xl mx-4 md:mx-auto flex flex-col justify-between gap-5 drop-shadow-xl">
@@ -19,8 +25,8 @@ export const LoginForm = ({ login }) => {
         <span className="flex-shrink mx-4 text-gray-600">OR</span>
         <div className="flex-grow border-t border-gray-300" />
       </div>
-      <TextInput type="email" />
-      <PasswordInput />
+      <TextInput type="email" value={email} inputChange={setEmail} />
+      <PasswordInput password={password} setPassword={setPassword} />
       <Button>Login</Button>
       <small className="mx-auto">
         {`Don't have an account?  `}
