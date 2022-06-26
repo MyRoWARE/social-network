@@ -1,5 +1,5 @@
 import { Title } from '../components';
-import { SingupForm } from '../components/Form/SignupForm';
+import { SignupForm } from '../components/Form/SignupForm';
 
 const Signup = () => (
   <div className="flex flex-col items-center">
@@ -8,7 +8,7 @@ const Signup = () => (
       subheading="Create an account to continue and connect with the people."
     />
 
-    <SingupForm />
+    <SignupForm />
   </div>
 );
 

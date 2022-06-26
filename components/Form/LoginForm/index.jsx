@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { signInWithEmailAndPassword, onAuthStateChanged } from 'firebase/auth';
 import { TextInput } from '../NameInput';
 import { GoogleExternalSignup, AppleExternalSignup } from '../ExternalSignup';
@@ -10,14 +10,22 @@ import { auth } from '../../../services/firebase';
 
 export const LoginForm = ({ login }) => {
   const [email, setEmail] = useState('test@gmail.com');
-  const [password, setPassword] = useState('cheese');
-  const [user, setUser] = useState({});
+  const [password, setPassword] = useState('password');
+  const [user, setUser] = useState({ email: 'NO EMAIL' });
 
   const router = useRouter();
 
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-  });
+  useEffect(() => {
+    onAuthStateChanged(auth, (currentUser) => {
+      console.log('CURRENT USER', currentUser);
+      setUser(currentUser);
+      if (currentUser) {
+        console.log('LOGGED IN');
+      } else {
+        console.log('LOGGED OUT');
+      }
+    });
+  }, []);
 
   const firebaseLogin = async () => {
     try {
@@ -28,17 +36,13 @@ export const LoginForm = ({ login }) => {
     }
   };
 
-  // const firebaseLogout = async () => {
-  //   await signOut(auth);
-  // };
-
   return (
     <form className="bg-white rounded-lg p-5 min-w-[400px] w-full max-w-xl mx-4 md:mx-auto flex flex-col justify-between gap-5 drop-shadow-xl">
       <div className="signup-with flex justify-between">
         <GoogleExternalSignup login={login} />
         <AppleExternalSignup login={login} />
       </div>
-      <h1>{user.email}</h1>
+      <h1>User {user?.email}</h1>
       <div className="relative flex py-2 items-center">
         <div className="flex-grow border-t border-gray-300" />
         <span className="flex-shrink mx-4 text-gray-600">OR</span>
