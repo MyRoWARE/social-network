@@ -24,3 +24,5 @@ export const storage = getStorage(firebaseApp);
 // used for images
 
 export const auth = getAuth(firebaseApp);
+
+export const isLoggedIn = () => auth.currentUser;
