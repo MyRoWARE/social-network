@@ -1,4 +1,3 @@
-import React from 'react';
 import { MyImage } from '../MyImage';
 import { Notifications } from './Notifications';
 import { SearchFilter } from './SearchFilter';
@@ -6,7 +5,7 @@ import { SearchFilter } from './SearchFilter';
 const username = 'Saleh Ahmed';
 const imageSRC =
   'photo-1560250097-0b93528c311a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHByb2ZpbGV8ZW58MHx8MHx8';
-export const NavBar = ({ children }) => (
+export const NavBar = () => (
   <div>
     <div
       className="bg-white mt-24  p-4 
