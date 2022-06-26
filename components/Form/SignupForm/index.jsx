@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import { Button } from '../../Button';
 import { DatePicker } from '../../DatePicker';
+import { GenderPicker } from '../../GenderPicker';
+// import { GenderPicker } from '../..';
 import { AppleExternalSignup, GoogleExternalSignup } from '../ExternalSignup';
 import { TextInput } from '../NameInput';
 import { PasswordInput } from '../PasswordInput';
@@ -24,20 +26,7 @@ export const SingupForm = ({ login }) => {
       <PasswordInput placeholder="Password confirmation" />
       <div className="bottom-form-section flex flex-row justify-between">
         <DatePicker />
-        <div className="gender flex gap-2 p-2 rounded-xl border-2 border-gray-400 w-full max-w-[240px]">
-          <label htmlFor="gender" key="male" className="p-1">
-            <input type="radio" />
-            <span className="ml-1">Male </span>
-          </label>
-          <label htmlFor="gender" key="female" className="p-1">
-            <input type="radio" />
-            <span className="ml-1">Female </span>
-          </label>
-          <label htmlFor="gender" key="other" className="p-1">
-            <input type="radio" />
-            <span className="ml-1">Other </span>
-          </label>
-        </div>
+        <GenderPicker />
       </div>
       <Button>Sign Up</Button>
       <small className="mx-auto">
