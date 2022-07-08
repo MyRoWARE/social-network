@@ -1,11 +1,11 @@
-export const TextInput = ({ type, error, name, setName, email, setEmail }) => {
+export const TextInput = ({ type, error, name, inputChange, email }) => {
   const handleName = (e) => {
-    setName(e.target.value);
+    inputChange(e.target.value);
     console.log(e.target.value);
   };
 
   const handleEmail = (e) => {
-    setEmail(e.target.value);
+    inputChange(e.target.value);
     console.log(e.target.value);
   };
 
