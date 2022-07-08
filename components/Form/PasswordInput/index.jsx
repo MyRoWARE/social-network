@@ -1,4 +1,8 @@
-export const PasswordInput = ({ password, setPassword, error, placeholder }) => {
+import { useState } from 'react';
+
+export const PasswordInput = ({ error, placeholder }) => {
+  const [password, setPassword] = useState('');
+
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };

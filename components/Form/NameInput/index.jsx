@@ -1,13 +1,17 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export const TextInput = ({ type, error }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const handleName = (e) => {
+    setName(e.target.value);
+    console.log(e.target.value);
+  };
 
-  useEffect(() => {
-    console.log(name);
-    console.log(email);
-  });
+  const handleEmail = (e) => {
+    setEmail(e.target.value);
+    console.log(e.target.value);
+  };
 
   if (type === 'name') {
     return (
@@ -34,7 +38,7 @@ export const TextInput = ({ type, error }) => {
             type="text"
             placeholder="Your Name"
             required
-            onChange={(e) => setName(e.target.value)}
+            onChange={handleName}
             value={name}
           />
         </div>
@@ -71,7 +75,7 @@ export const TextInput = ({ type, error }) => {
           type="email"
           placeholder="Your Email"
           required
-          onChange={(e) => setEmail(e.target.value)}
+          onChange={handleEmail}
           value={email}
         />
       </div>
