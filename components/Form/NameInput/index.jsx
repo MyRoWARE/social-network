@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
-export const TextInput = ({ type, error }) => {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+export const TextInput = ({ type, error, name, setName, email, setEmail }) => {
   const handleName = (e) => {
     setName(e.target.value);
     console.log(e.target.value);
